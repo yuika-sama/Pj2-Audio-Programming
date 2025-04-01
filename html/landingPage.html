@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="../css/landingPage.css">
+</head>
+<body>
+  <header class="header">
+    <button class="profile-btn" id="logoutBtn">Đăng xuất</button>
+  </header>
+
+  <main class="landing-container">
+    <div class="card" onclick="navigateTo('vocabSearch.html')">
+      <h3>Tra cứu từ vựng</h3>
+      <p>Kho từ điển tiếng Anh cơ bản.</p>
+    </div>
+    <div class="card" onclick="navigateTo('examSelection.html')">
+      <h3>Luyện nghe</h3>
+      <p>Luyện kỹ năng nghe với các bài tập đa dạng.</p>
+    </div>
+  </main>
+
+  <script src="../script/landingPage.js"></script>
+</body>
+</html>

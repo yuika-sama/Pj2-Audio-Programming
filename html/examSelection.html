@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn bài thi nghe</title>
+    <link rel="stylesheet" href="../css/examSelection.css">
+</head>
+<body>
+    <div class="container">
+        <div class="exam-card">
+            <h2>Lựa chọn bài thi nghe</h2>
+            
+            <div class="exam-info">
+                <div class="info-row">
+                    <span class="label">Tên bài nghe:</span>
+                    <span id="examTitle">Đang tải...</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Độ dài:</span>
+                    <span id="examDuration">Đang tải...</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Số câu hỏi:</span>
+                    <span id="questionCount">5</span>
+                </div>
+            </div>
+            
+            <div class="difficulty-selection">
+                <h3>Chọn độ khó:</h3>
+                <div class="difficulty-options">
+                    <label>
+                        <input type="radio" name="difficulty" value="easy" checked>
+                        <span class="difficulty-label easy">Dễ</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="difficulty" value="moderate">
+                        <span class="difficulty-label moderate">Vừa phải</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="difficulty" value="medium">
+                        <span class="difficulty-label medium">Trung bình</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="difficulty" value="hard">
+                        <span class="difficulty-label hard">Khó</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="difficulty" value="extreme">
+                        <span class="difficulty-label extreme">Huỷ diệt</span>
+                    </label>
+                </div>
+            </div>
+            
+            <button id="startButton" class="start-button">Bắt đầu làm bài</button>
+        </div>
+    </div>
+
+    <script src="../script/examSelection.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container chính */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Thanh tìm kiếm */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Từ thường gặp */
+.featured-words {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.word-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.word-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.word-card span {
+    font-weight: 500;
+}
+
+/* Kết quả tra từ */
+.result-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    display: none;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    font-size: 24px;
+    cursor: pointer;
+    color: #7f8c8d;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-button:hover {
+    background-color: #f1f1f1;
+    color: #e74c3c;
+}
+
+/* Thẻ phiên âm */
+.phonetic {
+    margin-bottom: 10px;
+}
+
+.audio-icon {
+    cursor: pointer;
+    color: #3498db;
+    margin-left: 5px;
+}
+
+.audio-icon:hover {
+    color: #1e6bb8;
+}
+
+/* Ví dụ */
+.example {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
